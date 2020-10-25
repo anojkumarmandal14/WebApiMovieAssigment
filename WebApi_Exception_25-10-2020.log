@@ -1,0 +1,45 @@
+----------------WEB API EXCEPTION------------------------
+25-10-2020 08:56:19
+Exception occured at MoviesProvider GetMovieDetails Method ,Exception =System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'www.omdbapi.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at WebApiDemo.Repository.ServiceRepository.GetMovieDetails(String url) in F:\Assignment\MVCAssignment\WebApiDemo\Repository\ServiceRepository.cs:line 23
+   at WebApiDemo.Services.MovieProvider.GetMovieDetails(String Title, String Year, String Plot) in F:\Assignment\MVCAssignment\WebApiDemo\Services\MovieProvider.cs:line 47
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'www.omdbapi.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+----------------WEB API EXCEPTION------------------------
+25-10-2020 08:56:19
+Exception occured at MovieFactory GetMovieDetails Method ,Exception =System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'www.omdbapi.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at WebApiDemo.Services.MovieProvider.GetMovieDetails(String Title, String Year, String Plot) in F:\Assignment\MVCAssignment\WebApiDemo\Services\MovieProvider.cs:line 65
+   at WebApiDemo.Services.MovieFactory.GetMovieDetails(String Title, String Year, String Plot) in F:\Assignment\MVCAssignment\WebApiDemo\Services\MovieFactory.cs:line 37
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'www.omdbapi.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+----------------WEB API EXCEPTION------------------------
+25-10-2020 08:56:19
+Internal server error :System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'www.omdbapi.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at WebApiDemo.Services.MovieFactory.GetMovieDetails(String Title, String Year, String Plot) in F:\Assignment\MVCAssignment\WebApiDemo\Services\MovieFactory.cs:line 43
+   at WebApiDemo.Controllers.MovieController.Get() in F:\Assignment\MVCAssignment\WebApiDemo\Controllers\MovieController.cs:line 45
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'www.omdbapi.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
